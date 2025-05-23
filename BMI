@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+	
+	float altura, peso, BMI;
+	
+	printf("ingrese su peso en KG con punto: \n");
+	scanf("%f", &peso);
+	
+	printf("ingrese su altura en Metros: \n");
+	scanf("%f", &altura);
+	
+	BMI = (peso/(altura*altura));
+	printf(" su bmi es %.2f ", BMI);
+	
+	if(BMI < 18.5){
+		printf("prensenta Bajo Peso.");
+	}else if(BMI >= 18.5 && BMI <= 24.9){
+		printf("Esta en un Peso Normal.");
+	} else if(BMI >= 25 && BMI <= 29.9 ){
+		printf("Esta en Sobrepeso.");
+	} else if(BMI >= 30.0){
+		printf("Esta en Obesidad");
+	} 
+	
+	return 0;
+}
+
