@@ -16,13 +16,12 @@ int main(int argc, char *argv[]) {
 	if(BMI < 18.5){
 		printf("prensenta Bajo Peso.");
 	}else if(BMI >= 18.5 && BMI <= 24.9){
-		printf("Está en un Peso Normal.");
+		printf("Est� en un Peso Normal.");
 	} else if(BMI >= 25 && BMI <= 29.9 ){
-		printf("Está en Sobrepeso.");
+		printf("Est� en Sobrepeso.");
 	} else if(BMI >= 30.0){
-		printf("Está en Obesidad");
+		printf("Est� en Obesidad");
 	} 
-	
 	
 	return 0;
 }
